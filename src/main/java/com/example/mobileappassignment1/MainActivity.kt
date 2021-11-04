@@ -1,5 +1,6 @@
 package com.example.mobileappassignment1
 
+import android.content.Intent
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -16,6 +17,16 @@ class MainActivity : AppCompatActivity() {
         button.setOnClickListener {
 
             Toast.makeText(this, "Thank You!", Toast.LENGTH_SHORT).show()
+
+        }
+
+        val button2 = findViewById<Button>(R.id.button2);
+
+        button2.setOnClickListener {
+
+            val intent = Intent(this, SecondaryActivity::class.java )
+
+            startActivity(intent)
 
         }
 
