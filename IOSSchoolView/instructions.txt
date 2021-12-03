@@ -1,0 +1,8 @@
+All these steps require XCode (need a mac)
+
+1) Download the entire project folder
+2) launch the Xcode App and press "open a project or file"
+3) Navigate to the project folder and open it
+4) Let the project load in (it will take a minute or two)
+5) at the top of the screen there is an option to run the app in an emulator or a physical IOS device
+6) If using a Physical Device, you need to plug it in to the computer
