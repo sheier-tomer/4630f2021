@@ -1,0 +1,5 @@
+The project I have been working on for this semester in Mobile App Programming I is something I call “School View.” School View is a school rating app that is 
+based on student or visitor reviews. To start off, what problem exactly is this app trying to solve? The problem is that there is no simple way for students to 
+view how well a university is doing based on important factors, being academics, athletics, housing, dining, social life, faculty, and many more. There is also no 
+quick way for rising college undergrads to view which school they want to enroll in based on these categories. I only had one approach for this problem in mind, and
+I feel like it has been working.
