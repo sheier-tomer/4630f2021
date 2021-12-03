@@ -1,0 +1,981 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="IOSSchoolView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" ambiguous="YES" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="XIW-Zz-8sQ">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="95w-28-ROg" userLabel="SecondButton">
+                                <rect key="frame" x="116.5" y="481.5" width="181" height="47"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Sign in with Facebook" buttonSize="large">
+                                    <backgroundConfiguration key="background" image="FB"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="adU-Oi-ULw" userLabel="ThirdButton">
+                                <rect key="frame" x="130.5" y="538.5" width="153" height="47"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Sign in with Email" buttonSize="large">
+                                    <backgroundConfiguration key="background" image="Email"/>
+                                </buttonConfiguration>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login or create an account " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m2I-d8-OtF">
+                                <rect key="frame" x="103.5" y="381.5" width="207" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SchoolView" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l10-Pd-oCg">
+                                <rect key="frame" x="134.5" y="334" width="145" height="39.5"/>
+                                <fontDescription key="fontDescription" name="KohinoorTelugu-Regular" family="Kohinoor Telugu" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yR4-VH-S95">
+                                <rect key="frame" x="177.5" y="595.5" width="59.5" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Login"/>
+                                <connections>
+                                    <action selector="nextViewButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3IC-b5-GJw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mbD-Bt-jrY">
+                                <rect key="frame" x="125" y="424.5" width="164.5" height="47"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Sign in with Google" buttonSize="large">
+                                    <backgroundConfiguration key="background" image="Google"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="yR4-VH-S95" firstAttribute="top" secondItem="adU-Oi-ULw" secondAttribute="bottom" constant="10" id="0mp-MT-Ehu"/>
+                            <constraint firstItem="mbD-Bt-jrY" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="1rt-w9-PnC"/>
+                            <constraint firstItem="adU-Oi-ULw" firstAttribute="top" secondItem="95w-28-ROg" secondAttribute="bottom" constant="10" id="GcP-CK-NIw"/>
+                            <constraint firstItem="m2I-d8-OtF" firstAttribute="centerX" secondItem="l10-Pd-oCg" secondAttribute="centerX" id="JKd-a3-jpM"/>
+                            <constraint firstItem="yR4-VH-S95" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="S6M-uu-pZy"/>
+                            <constraint firstItem="m2I-d8-OtF" firstAttribute="top" secondItem="l10-Pd-oCg" secondAttribute="bottom" constant="8" symbolic="YES" id="Sbe-oT-bM8"/>
+                            <constraint firstItem="adU-Oi-ULw" firstAttribute="centerX" secondItem="XIW-Zz-8sQ" secondAttribute="centerX" id="YI2-Q0-u1d"/>
+                            <constraint firstItem="m2I-d8-OtF" firstAttribute="centerX" secondItem="mbD-Bt-jrY" secondAttribute="centerX" id="Z9b-9W-8Ca"/>
+                            <constraint firstItem="adU-Oi-ULw" firstAttribute="centerX" secondItem="yR4-VH-S95" secondAttribute="centerX" id="bvY-q9-nEA"/>
+                            <constraint firstItem="95w-28-ROg" firstAttribute="centerX" secondItem="mbD-Bt-jrY" secondAttribute="centerX" id="dcI-ar-8u8"/>
+                            <constraint firstItem="95w-28-ROg" firstAttribute="top" secondItem="mbD-Bt-jrY" secondAttribute="bottom" constant="10" id="eoc-eI-V7N"/>
+                            <constraint firstItem="adU-Oi-ULw" firstAttribute="centerX" secondItem="95w-28-ROg" secondAttribute="centerX" id="qnB-98-hOb"/>
+                            <constraint firstItem="mbD-Bt-jrY" firstAttribute="top" secondItem="m2I-d8-OtF" secondAttribute="bottom" constant="22" id="rl5-P3-5Bi"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="yzB-74-pKZ" kind="showDetail" identifier="SecondViewSegue" id="rrk-7w-8m9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="121.73913043478262" y="123.88392857142857"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="7C9-Bo-jXz">
+            <objects>
+                <viewController id="69b-8A-JFw" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Bnk-cf-y6H">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="University of Massachussetts Lowell" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Phs-HS-Brn">
+                                <rect key="frame" x="70" y="61" width="275" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="5mW-Gz-9nK">
+                                <rect key="frame" x="36" y="135" width="345" height="396.5"/>
+                            </mapView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is a map feature" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bwE-DP-PMc">
+                                <rect key="frame" x="128" y="583.5" width="158" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="QOy-l8-DGw"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="5mW-Gz-9nK" firstAttribute="top" secondItem="Phs-HS-Brn" secondAttribute="bottom" constant="53" id="0dJ-yN-lKR"/>
+                            <constraint firstItem="Phs-HS-Brn" firstAttribute="leading" secondItem="QOy-l8-DGw" secondAttribute="leading" constant="70" id="3nt-t2-y3b"/>
+                            <constraint firstItem="QOy-l8-DGw" firstAttribute="trailing" secondItem="5mW-Gz-9nK" secondAttribute="trailing" constant="33" id="7Vh-i0-ctv"/>
+                            <constraint firstItem="Phs-HS-Brn" firstAttribute="top" secondItem="QOy-l8-DGw" secondAttribute="top" constant="61" id="CBC-ez-jrK"/>
+                            <constraint firstItem="QOy-l8-DGw" firstAttribute="trailing" secondItem="bwE-DP-PMc" secondAttribute="trailing" constant="128" id="ELq-FJ-mkI"/>
+                            <constraint firstItem="QOy-l8-DGw" firstAttribute="bottom" secondItem="bwE-DP-PMc" secondAttribute="bottom" constant="204" id="GgK-px-9Zo"/>
+                            <constraint firstItem="5mW-Gz-9nK" firstAttribute="leading" secondItem="QOy-l8-DGw" secondAttribute="leading" constant="36" id="KsM-6P-JBX"/>
+                            <constraint firstItem="bwE-DP-PMc" firstAttribute="top" secondItem="5mW-Gz-9nK" secondAttribute="bottom" constant="52" id="iHf-js-zek"/>
+                            <constraint firstItem="QOy-l8-DGw" firstAttribute="trailing" secondItem="Phs-HS-Brn" secondAttribute="trailing" constant="69" id="nwK-lb-lvC"/>
+                            <constraint firstItem="bwE-DP-PMc" firstAttribute="leading" secondItem="QOy-l8-DGw" secondAttribute="leading" constant="128" id="pjc-U4-oPb"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QWg-PQ-mHU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="857.97101449275374" y="-544.41964285714278"/>
+        </scene>
+        <!--Home Screen View Controller-->
+        <scene sceneID="Ad7-3c-yUj">
+            <objects>
+                <viewController storyboardIdentifier="HomeScreenViewController" id="yzB-74-pKZ" customClass="HomeScreenViewController" customModule="IOSSchoolView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fBz-ar-STo">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="BOl-Y0-Iy5">
+                                <rect key="frame" x="0.0" y="53" width="414" height="51"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BUS-6d-3SO">
+                                <rect key="frame" x="31" y="423" width="65.5" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Dining"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iXm-aY-qzQ">
+                                <rect key="frame" x="31" y="373" width="77.5" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Housing"/>
+                                <connections>
+                                    <action selector="HousingViewButton:" destination="yzB-74-pKZ" eventType="touchUpInside" id="N3c-xG-yto"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cjw-1k-TZL">
+                                <rect key="frame" x="31" y="322" width="80.5" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Athletics"/>
+                                <connections>
+                                    <action selector="AthleticsViewButton:" destination="yzB-74-pKZ" eventType="touchUpInside" id="WWO-Up-kk0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="101-av-OVN">
+                                <rect key="frame" x="31" y="277" width="95" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Academics"/>
+                                <connections>
+                                    <action selector="AcademicsView:" destination="yzB-74-pKZ" eventType="touchUpInside" id="kCZ-aa-Wwg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zth-dR-Cto">
+                                <rect key="frame" x="31" y="565" width="61" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Other"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mQ3-YW-8jW">
+                                <rect key="frame" x="31" y="514" width="70.5" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Faculty"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="px3-88-tgK">
+                                <rect key="frame" x="31" y="469" width="63" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Social"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eBc-1v-qdy">
+                                <rect key="frame" x="122" y="166" width="170" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Info"/>
+                                <connections>
+                                    <action selector="InfoViewButton:" destination="yzB-74-pKZ" eventType="touchUpInside" id="Sqc-bR-uwg"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lWF-dz-prk" customClass="CosmosView" customModule="IOSSchoolView" customModuleProvider="target">
+                                <rect key="frame" x="182" y="277" width="170" height="30"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="rating">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="filledColor">
+                                        <color key="value" systemColor="systemOrangeColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="emptyBorderColor">
+                                        <color key="value" systemColor="systemOrangeColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="filledBorderColor">
+                                        <color key="value" systemColor="systemOrangeColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="totalStars">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="starSize">
+                                        <real key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fillMode">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WTG-9b-4AI" customClass="CosmosView" customModule="IOSSchoolView" customModuleProvider="target">
+                                <rect key="frame" x="182" y="325" width="170" height="30"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="rating">
+                                        <real key="value" value="3.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="filledColor">
+                                        <color key="value" systemColor="systemOrangeColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="emptyBorderColor">
+                                        <color key="value" systemColor="systemOrangeColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="filledBorderColor">
+                                        <color key="value" systemColor="systemOrangeColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="totalStars">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="starSize">
+                                        <real key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fillMode">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QLq-lu-QwA" customClass="CosmosView" customModule="IOSSchoolView" customModuleProvider="target">
+                                <rect key="frame" x="182" y="374" width="170" height="30"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="rating">
+                                        <real key="value" value="3.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="filledColor">
+                                        <color key="value" systemColor="systemOrangeColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="emptyBorderColor">
+                                        <color key="value" systemColor="systemOrangeColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="filledBorderColor">
+                                        <color key="value" systemColor="systemOrangeColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="totalStars">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="starSize">
+                                        <real key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fillMode">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3sh-Ru-YSs" customClass="CosmosView" customModule="IOSSchoolView" customModuleProvider="target">
+                                <rect key="frame" x="182" y="421" width="170" height="30"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="rating">
+                                        <real key="value" value="3.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="filledColor">
+                                        <color key="value" systemColor="systemOrangeColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="emptyBorderColor">
+                                        <color key="value" systemColor="systemOrangeColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="filledBorderColor">
+                                        <color key="value" systemColor="systemOrangeColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="totalStars">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="starSize">
+                                        <real key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fillMode">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yNW-zD-uTf" customClass="CosmosView" customModule="IOSSchoolView" customModuleProvider="target">
+                                <rect key="frame" x="182" y="470" width="170" height="30"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="rating">
+                                        <real key="value" value="3.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="filledColor">
+                                        <color key="value" systemColor="systemOrangeColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="emptyBorderColor">
+                                        <color key="value" systemColor="systemOrangeColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="filledBorderColor">
+                                        <color key="value" systemColor="systemOrangeColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="totalStars">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="starSize">
+                                        <real key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fillMode">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kvA-sM-OQ9" customClass="CosmosView" customModule="IOSSchoolView" customModuleProvider="target">
+                                <rect key="frame" x="182" y="515" width="170" height="30"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="rating">
+                                        <real key="value" value="3.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="filledColor">
+                                        <color key="value" systemColor="systemOrangeColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="emptyBorderColor">
+                                        <color key="value" systemColor="systemOrangeColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="filledBorderColor">
+                                        <color key="value" systemColor="systemOrangeColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="totalStars">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="starSize">
+                                        <real key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fillMode">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wv8-QU-B5g">
+                                <rect key="frame" x="119" y="9" width="177" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Umass Boston Demo"/>
+                                <connections>
+                                    <action selector="UmassBostonButtonViewPress:" destination="yzB-74-pKZ" eventType="touchUpInside" id="hJ2-cv-wgT"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="University of Massachussetts Lowell" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eZT-LN-YGf">
+                                <rect key="frame" x="55" y="137" width="305" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="7MJ-BF-SNA"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="eZT-LN-YGf" firstAttribute="leading" secondItem="7MJ-BF-SNA" secondAttribute="leading" constant="55" id="0S9-SF-gbq"/>
+                            <constraint firstItem="7MJ-BF-SNA" firstAttribute="trailing" secondItem="WTG-9b-4AI" secondAttribute="trailing" constant="62" id="1E3-h1-DpK"/>
+                            <constraint firstItem="101-av-OVN" firstAttribute="top" secondItem="eBc-1v-qdy" secondAttribute="bottom" constant="80" id="3rB-1z-WvB"/>
+                            <constraint firstItem="lWF-dz-prk" firstAttribute="top" secondItem="eBc-1v-qdy" secondAttribute="bottom" constant="80" id="6rC-Mw-Djl"/>
+                            <constraint firstItem="7MJ-BF-SNA" firstAttribute="trailing" secondItem="kvA-sM-OQ9" secondAttribute="trailing" constant="62" id="7BT-e2-TW4"/>
+                            <constraint firstItem="cjw-1k-TZL" firstAttribute="leading" secondItem="7MJ-BF-SNA" secondAttribute="leading" constant="31" id="7U5-Sx-gLJ"/>
+                            <constraint firstItem="wv8-QU-B5g" firstAttribute="top" secondItem="7MJ-BF-SNA" secondAttribute="top" constant="9" id="8r9-5y-KCc"/>
+                            <constraint firstItem="eBc-1v-qdy" firstAttribute="top" secondItem="eZT-LN-YGf" secondAttribute="bottom" constant="8" symbolic="YES" id="A8s-cS-mZE"/>
+                            <constraint firstItem="cjw-1k-TZL" firstAttribute="top" secondItem="101-av-OVN" secondAttribute="bottom" constant="14" id="AYK-1n-CTF"/>
+                            <constraint firstItem="kvA-sM-OQ9" firstAttribute="top" secondItem="yNW-zD-uTf" secondAttribute="bottom" constant="15" id="AzR-eF-GoI"/>
+                            <constraint firstItem="7MJ-BF-SNA" firstAttribute="trailing" secondItem="yNW-zD-uTf" secondAttribute="trailing" constant="62" id="DDE-Gt-PzL"/>
+                            <constraint firstItem="BUS-6d-3SO" firstAttribute="top" secondItem="iXm-aY-qzQ" secondAttribute="bottom" constant="19" id="IWv-VH-Buo"/>
+                            <constraint firstItem="yNW-zD-uTf" firstAttribute="top" secondItem="3sh-Ru-YSs" secondAttribute="bottom" constant="19" id="KXh-2r-GqK"/>
+                            <constraint firstItem="px3-88-tgK" firstAttribute="top" secondItem="BUS-6d-3SO" secondAttribute="bottom" constant="15" id="MZA-27-vcE"/>
+                            <constraint firstItem="mQ3-YW-8jW" firstAttribute="leading" secondItem="7MJ-BF-SNA" secondAttribute="leading" constant="31" id="N9l-mT-ucD"/>
+                            <constraint firstItem="101-av-OVN" firstAttribute="leading" secondItem="7MJ-BF-SNA" secondAttribute="leading" constant="31" id="VpG-yQ-I5b"/>
+                            <constraint firstItem="mQ3-YW-8jW" firstAttribute="top" secondItem="px3-88-tgK" secondAttribute="bottom" constant="14" id="XWS-ln-NFd"/>
+                            <constraint firstItem="px3-88-tgK" firstAttribute="leading" secondItem="7MJ-BF-SNA" secondAttribute="leading" constant="31" id="Xno-C1-GkP"/>
+                            <constraint firstItem="WTG-9b-4AI" firstAttribute="top" secondItem="lWF-dz-prk" secondAttribute="bottom" constant="18" id="YgG-dm-tJs"/>
+                            <constraint firstItem="BUS-6d-3SO" firstAttribute="leading" secondItem="7MJ-BF-SNA" secondAttribute="leading" constant="31" id="b85-7M-K5o"/>
+                            <constraint firstItem="eBc-1v-qdy" firstAttribute="leading" secondItem="7MJ-BF-SNA" secondAttribute="leading" constant="122" id="bV7-FE-mM2"/>
+                            <constraint firstItem="wv8-QU-B5g" firstAttribute="leading" secondItem="7MJ-BF-SNA" secondAttribute="leading" constant="119" id="dDY-y2-GlN"/>
+                            <constraint firstItem="7MJ-BF-SNA" firstAttribute="trailing" secondItem="eBc-1v-qdy" secondAttribute="trailing" constant="122" id="dHO-Kz-vbN"/>
+                            <constraint firstItem="zth-dR-Cto" firstAttribute="leading" secondItem="7MJ-BF-SNA" secondAttribute="leading" constant="31" id="dkW-0F-9nl"/>
+                            <constraint firstItem="7MJ-BF-SNA" firstAttribute="trailing" secondItem="wv8-QU-B5g" secondAttribute="trailing" constant="118" id="eI2-NP-mUb"/>
+                            <constraint firstItem="BOl-Y0-Iy5" firstAttribute="leading" secondItem="7MJ-BF-SNA" secondAttribute="leading" id="ers-cI-EzB"/>
+                            <constraint firstItem="eZT-LN-YGf" firstAttribute="top" secondItem="BOl-Y0-Iy5" secondAttribute="bottom" constant="33" id="giZ-ig-gvz"/>
+                            <constraint firstItem="3sh-Ru-YSs" firstAttribute="top" secondItem="QLq-lu-QwA" secondAttribute="bottom" constant="17" id="hI9-Eu-wXe"/>
+                            <constraint firstItem="BOl-Y0-Iy5" firstAttribute="top" secondItem="wv8-QU-B5g" secondAttribute="bottom" constant="13" id="jkz-3J-NiN"/>
+                            <constraint firstItem="iXm-aY-qzQ" firstAttribute="top" secondItem="cjw-1k-TZL" secondAttribute="bottom" constant="20" id="jqg-7J-fYS"/>
+                            <constraint firstItem="BOl-Y0-Iy5" firstAttribute="trailing" secondItem="7MJ-BF-SNA" secondAttribute="trailing" id="m61-w4-6Hp"/>
+                            <constraint firstItem="iXm-aY-qzQ" firstAttribute="leading" secondItem="7MJ-BF-SNA" secondAttribute="leading" constant="31" id="m6v-Gj-lIk"/>
+                            <constraint firstItem="zth-dR-Cto" firstAttribute="top" secondItem="mQ3-YW-8jW" secondAttribute="bottom" constant="20" id="nkG-E6-gS0"/>
+                            <constraint firstItem="7MJ-BF-SNA" firstAttribute="trailing" secondItem="eZT-LN-YGf" secondAttribute="trailing" constant="54" id="qcx-uG-6OV"/>
+                            <constraint firstItem="7MJ-BF-SNA" firstAttribute="trailing" secondItem="lWF-dz-prk" secondAttribute="trailing" constant="62" id="rcQ-44-Q56"/>
+                            <constraint firstItem="QLq-lu-QwA" firstAttribute="top" secondItem="WTG-9b-4AI" secondAttribute="bottom" constant="19" id="y0z-GW-NFB"/>
+                            <constraint firstItem="7MJ-BF-SNA" firstAttribute="trailing" secondItem="QLq-lu-QwA" secondAttribute="trailing" constant="62" id="y7I-Gr-5fY"/>
+                            <constraint firstItem="7MJ-BF-SNA" firstAttribute="trailing" secondItem="3sh-Ru-YSs" secondAttribute="trailing" constant="62" id="zdx-OR-7ue"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="pvu-Ru-JcC" kind="showDetail" identifier="UmassBostonSegue" id="Ee4-h0-1TU"/>
+                        <segue destination="Sgz-6Z-U7Y" kind="showDetail" identifier="AcademicsViewSegue" id="FKc-F6-k8D"/>
+                        <segue destination="1iY-gL-9au" kind="showDetail" identifier="AthleticsViewSegue" id="LoF-PW-k80"/>
+                        <segue destination="wKu-R2-dOI" kind="showDetail" identifier="HousingViewSegue" id="Hiv-eH-uO4"/>
+                        <segue destination="69b-8A-JFw" kind="showDetail" identifier="InfoSegue" id="kk8-XH-V6E"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OCM-c2-si5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="857" y="124"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="V1m-1i-awC">
+            <objects>
+                <viewController id="Sgz-6Z-U7Y" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="H0y-pX-Nk7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eUX-Pm-8y4">
+                                <rect key="frame" x="0.0" y="66" width="414" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Academics" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="egb-ej-dRK">
+                                <rect key="frame" x="165" y="144" width="84" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lcl-QN-UsA" customClass="CosmosView" customModule="IOSSchoolView" customModuleProvider="target">
+                                <rect key="frame" x="185" y="309" width="170" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="rating">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="filledColor">
+                                        <color key="value" systemColor="systemOrangeColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="emptyBorderColor">
+                                        <color key="value" systemColor="systemOrangeColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="filledBorderColor">
+                                        <color key="value" systemColor="systemOrangeColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="totalStars">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="starSize">
+                                        <real key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fillMode">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Jdv-He-b9T">
+                                <rect key="frame" x="150" y="173" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GJM-7A-X0k">
+                                <rect key="frame" x="44" y="227" width="29" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="EkU-Ly-pat"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H8p-na-mhz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-571.01449275362324" y="805.58035714285711"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="qUO-KZ-cbN">
+            <objects>
+                <viewController id="1iY-gL-9au" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9r5-Sv-ab8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nNt-hD-TuW">
+                                <rect key="frame" x="0.0" y="72" width="414" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Athletics" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a7l-Zh-MLY">
+                                <rect key="frame" x="160" y="140" width="67" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rSh-eT-xZf" customClass="CosmosView" customModule="IOSSchoolView" customModuleProvider="target">
+                                <rect key="frame" x="195" y="305" width="170" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="rating">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="filledColor">
+                                        <color key="value" systemColor="systemOrangeColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="emptyBorderColor">
+                                        <color key="value" systemColor="systemOrangeColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="filledBorderColor">
+                                        <color key="value" systemColor="systemOrangeColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="totalStars">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="starSize">
+                                        <real key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fillMode">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="vEG-Ar-KLb">
+                                <rect key="frame" x="160" y="169" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P4x-yh-67J">
+                                <rect key="frame" x="79" y="227" width="29" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="jEi-tH-xGq"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="taQ-r2-uOM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="234.78260869565219" y="805.58035714285711"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="FdH-lm-e11">
+            <objects>
+                <viewController id="wKu-R2-dOI" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pLf-9T-oMV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hYk-Pu-rvx">
+                                <rect key="frame" x="0.0" y="65" width="414" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Housing" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kcO-09-14T">
+                                <rect key="frame" x="165" y="149" width="63" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IHl-qy-BBk" customClass="CosmosView" customModule="IOSSchoolView" customModuleProvider="target">
+                                <rect key="frame" x="209" y="322" width="170" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="rating">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="filledColor">
+                                        <color key="value" systemColor="systemOrangeColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="emptyBorderColor">
+                                        <color key="value" systemColor="systemOrangeColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="filledBorderColor">
+                                        <color key="value" systemColor="systemOrangeColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="totalStars">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="starSize">
+                                        <real key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fillMode">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OWL-Uj-jej">
+                                <rect key="frame" x="73" y="240" width="29" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="J7i-sD-iZm">
+                                <rect key="frame" x="154" y="178" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="lyS-mH-SsP"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WRr-gM-ZfD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1094" y="806"/>
+        </scene>
+        <!--Umass Boston View Controller-->
+        <scene sceneID="o5u-Fu-kNm">
+            <objects>
+                <viewController storyboardIdentifier="UmassBostonViewController" id="pvu-Ru-JcC" customClass="UmassBostonViewController" customModule="IOSSchoolView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="T7L-nm-zcy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" text="" translatesAutoresizingMaskIntoConstraints="NO" id="TNd-XH-MmX">
+                                <rect key="frame" x="0.0" y="115" width="414" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="TRV-U7-zo9"/>
+                                </constraints>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wvp-jg-V95">
+                                <rect key="frame" x="31" y="468" width="65.5" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Dining"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C4E-Fy-xaD">
+                                <rect key="frame" x="31" y="418" width="77.5" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Housing"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qGj-gD-zDB">
+                                <rect key="frame" x="31" y="367" width="80.5" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Athletics"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JIB-tl-aKb">
+                                <rect key="frame" x="31" y="322" width="95" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Academics"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SVW-JF-YLi">
+                                <rect key="frame" x="31" y="610" width="61" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Other"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5xF-bm-Wdg">
+                                <rect key="frame" x="31" y="559" width="70.5" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Faculty"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rrp-jM-Dzv">
+                                <rect key="frame" x="31" y="514" width="63" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Social"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="University of Massachussetts Boston" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H0b-IU-bLh">
+                                <rect key="frame" x="70" y="182" width="275" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hjN-e1-nkL">
+                                <rect key="frame" x="122" y="211" width="170" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Info"/>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yyr-EL-tac" customClass="CosmosView" customModule="IOSSchoolView" customModuleProvider="target">
+                                <rect key="frame" x="182" y="322" width="170" height="30"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="rating">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="filledColor">
+                                        <color key="value" systemColor="systemOrangeColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="emptyBorderColor">
+                                        <color key="value" systemColor="systemOrangeColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="filledBorderColor">
+                                        <color key="value" systemColor="systemOrangeColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="totalStars">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="starSize">
+                                        <real key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fillMode">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fml-9F-HpS" customClass="CosmosView" customModule="IOSSchoolView" customModuleProvider="target">
+                                <rect key="frame" x="182" y="370" width="170" height="30"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="rating">
+                                        <real key="value" value="3.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="filledColor">
+                                        <color key="value" systemColor="systemOrangeColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="emptyBorderColor">
+                                        <color key="value" systemColor="systemOrangeColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="filledBorderColor">
+                                        <color key="value" systemColor="systemOrangeColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="totalStars">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="starSize">
+                                        <real key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fillMode">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mp7-AW-iRA" customClass="CosmosView" customModule="IOSSchoolView" customModuleProvider="target">
+                                <rect key="frame" x="182" y="419" width="170" height="30"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="rating">
+                                        <real key="value" value="3.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="filledColor">
+                                        <color key="value" systemColor="systemOrangeColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="emptyBorderColor">
+                                        <color key="value" systemColor="systemOrangeColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="filledBorderColor">
+                                        <color key="value" systemColor="systemOrangeColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="totalStars">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="starSize">
+                                        <real key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fillMode">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KFE-vT-IyI" customClass="CosmosView" customModule="IOSSchoolView" customModuleProvider="target">
+                                <rect key="frame" x="182" y="466" width="170" height="30"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="rating">
+                                        <real key="value" value="3.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="filledColor">
+                                        <color key="value" systemColor="systemOrangeColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="emptyBorderColor">
+                                        <color key="value" systemColor="systemOrangeColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="filledBorderColor">
+                                        <color key="value" systemColor="systemOrangeColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="totalStars">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="starSize">
+                                        <real key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fillMode">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IcG-D9-1cA" customClass="CosmosView" customModule="IOSSchoolView" customModuleProvider="target">
+                                <rect key="frame" x="182" y="515" width="170" height="30"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="rating">
+                                        <real key="value" value="3.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="filledColor">
+                                        <color key="value" systemColor="systemOrangeColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="emptyBorderColor">
+                                        <color key="value" systemColor="systemOrangeColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="filledBorderColor">
+                                        <color key="value" systemColor="systemOrangeColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="totalStars">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="starSize">
+                                        <real key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fillMode">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v9t-r0-f0R" customClass="CosmosView" customModule="IOSSchoolView" customModuleProvider="target">
+                                <rect key="frame" x="182" y="560" width="170" height="30"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="rating">
+                                        <real key="value" value="3.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="filledColor">
+                                        <color key="value" systemColor="systemOrangeColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="emptyBorderColor">
+                                        <color key="value" systemColor="systemOrangeColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="filledBorderColor">
+                                        <color key="value" systemColor="systemOrangeColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="totalStars">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="starSize">
+                                        <real key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fillMode">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="WMd-Nf-fd3"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Fml-9F-HpS" firstAttribute="top" secondItem="Yyr-EL-tac" secondAttribute="bottom" constant="18" id="071-uo-jyn"/>
+                            <constraint firstItem="WMd-Nf-fd3" firstAttribute="trailing" secondItem="H0b-IU-bLh" secondAttribute="trailing" constant="69" id="1wa-Wd-spB"/>
+                            <constraint firstItem="TNd-XH-MmX" firstAttribute="leading" secondItem="WMd-Nf-fd3" secondAttribute="leading" id="58Z-8n-jAs"/>
+                            <constraint firstItem="wvp-jg-V95" firstAttribute="leading" secondItem="WMd-Nf-fd3" secondAttribute="leading" constant="31" id="6mu-xU-7Vj"/>
+                            <constraint firstItem="v9t-r0-f0R" firstAttribute="top" secondItem="IcG-D9-1cA" secondAttribute="bottom" constant="15" id="Bgz-Yg-WSr"/>
+                            <constraint firstItem="hjN-e1-nkL" firstAttribute="top" secondItem="H0b-IU-bLh" secondAttribute="bottom" constant="8" symbolic="YES" id="C7t-OW-3sP"/>
+                            <constraint firstItem="rrp-jM-Dzv" firstAttribute="leading" secondItem="WMd-Nf-fd3" secondAttribute="leading" constant="31" id="CXJ-Qf-xR9"/>
+                            <constraint firstItem="qGj-gD-zDB" firstAttribute="top" secondItem="JIB-tl-aKb" secondAttribute="bottom" constant="14" id="DO1-jl-dBD"/>
+                            <constraint firstItem="SVW-JF-YLi" firstAttribute="top" secondItem="5xF-bm-Wdg" secondAttribute="bottom" constant="20" id="Dtu-Gd-DJU"/>
+                            <constraint firstItem="WMd-Nf-fd3" firstAttribute="trailing" secondItem="KFE-vT-IyI" secondAttribute="trailing" constant="62" id="EB2-7t-IuJ"/>
+                            <constraint firstItem="5xF-bm-Wdg" firstAttribute="leading" secondItem="WMd-Nf-fd3" secondAttribute="leading" constant="31" id="FZ9-kw-I8O"/>
+                            <constraint firstItem="WMd-Nf-fd3" firstAttribute="trailing" secondItem="Yyr-EL-tac" secondAttribute="trailing" constant="62" id="HFU-RB-xWl"/>
+                            <constraint firstItem="WMd-Nf-fd3" firstAttribute="trailing" secondItem="v9t-r0-f0R" secondAttribute="trailing" constant="62" id="HsW-fd-XTW"/>
+                            <constraint firstItem="WMd-Nf-fd3" firstAttribute="trailing" secondItem="hjN-e1-nkL" secondAttribute="trailing" constant="122" id="Jaq-aZ-hN9"/>
+                            <constraint firstItem="qGj-gD-zDB" firstAttribute="leading" secondItem="WMd-Nf-fd3" secondAttribute="leading" constant="31" id="KiA-pq-1I0"/>
+                            <constraint firstItem="WMd-Nf-fd3" firstAttribute="trailing" secondItem="mp7-AW-iRA" secondAttribute="trailing" constant="62" id="MpC-sb-468"/>
+                            <constraint firstItem="WMd-Nf-fd3" firstAttribute="trailing" secondItem="IcG-D9-1cA" secondAttribute="trailing" constant="62" id="N8z-cO-L7l"/>
+                            <constraint firstItem="mp7-AW-iRA" firstAttribute="top" secondItem="Fml-9F-HpS" secondAttribute="bottom" constant="19" id="NHe-zL-x9H"/>
+                            <constraint firstItem="C4E-Fy-xaD" firstAttribute="top" secondItem="qGj-gD-zDB" secondAttribute="bottom" constant="20" id="RaA-f9-mSn"/>
+                            <constraint firstItem="WMd-Nf-fd3" firstAttribute="trailing" secondItem="Fml-9F-HpS" secondAttribute="trailing" constant="62" id="Ror-Xh-XUt"/>
+                            <constraint firstItem="H0b-IU-bLh" firstAttribute="leading" secondItem="WMd-Nf-fd3" secondAttribute="leading" constant="70" id="S5p-m6-LaN"/>
+                            <constraint firstItem="KFE-vT-IyI" firstAttribute="top" secondItem="mp7-AW-iRA" secondAttribute="bottom" constant="17" id="Sth-z4-4lL"/>
+                            <constraint firstItem="SVW-JF-YLi" firstAttribute="leading" secondItem="WMd-Nf-fd3" secondAttribute="leading" constant="31" id="aWf-s1-vXV"/>
+                            <constraint firstItem="TNd-XH-MmX" firstAttribute="trailing" secondItem="WMd-Nf-fd3" secondAttribute="trailing" id="eYk-Nc-uU8"/>
+                            <constraint firstItem="Yyr-EL-tac" firstAttribute="top" secondItem="hjN-e1-nkL" secondAttribute="bottom" constant="80" id="fCU-Jp-0kb"/>
+                            <constraint firstItem="TNd-XH-MmX" firstAttribute="top" secondItem="WMd-Nf-fd3" secondAttribute="top" constant="115" id="fTf-3C-RHB"/>
+                            <constraint firstItem="JIB-tl-aKb" firstAttribute="leading" secondItem="WMd-Nf-fd3" secondAttribute="leading" constant="31" id="fcx-7P-8SL"/>
+                            <constraint firstItem="rrp-jM-Dzv" firstAttribute="top" secondItem="wvp-jg-V95" secondAttribute="bottom" constant="15" id="g1O-qr-vSw"/>
+                            <constraint firstItem="hjN-e1-nkL" firstAttribute="leading" secondItem="WMd-Nf-fd3" secondAttribute="leading" constant="122" id="gv1-EC-aTc"/>
+                            <constraint firstItem="wvp-jg-V95" firstAttribute="top" secondItem="C4E-Fy-xaD" secondAttribute="bottom" constant="19" id="iCR-t8-8af"/>
+                            <constraint firstItem="5xF-bm-Wdg" firstAttribute="top" secondItem="rrp-jM-Dzv" secondAttribute="bottom" constant="14" id="iWn-XX-0ty"/>
+                            <constraint firstItem="IcG-D9-1cA" firstAttribute="top" secondItem="KFE-vT-IyI" secondAttribute="bottom" constant="19" id="jHx-Gc-o5f"/>
+                            <constraint firstItem="JIB-tl-aKb" firstAttribute="top" secondItem="hjN-e1-nkL" secondAttribute="bottom" constant="80" id="rbw-PV-Nbv"/>
+                            <constraint firstItem="H0b-IU-bLh" firstAttribute="top" secondItem="TNd-XH-MmX" secondAttribute="bottom" constant="33" id="tBq-GI-Owq"/>
+                            <constraint firstItem="C4E-Fy-xaD" firstAttribute="leading" secondItem="WMd-Nf-fd3" secondAttribute="leading" constant="31" id="udp-4J-8I7"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vgl-Bc-wa3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1589.8550724637682" y="123.88392857142857"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="3sh-Ru-YSs">
+            <size key="intrinsicContentSize" width="170" height="30"/>
+        </designable>
+        <designable name="Fml-9F-HpS">
+            <size key="intrinsicContentSize" width="170" height="30"/>
+        </designable>
+        <designable name="IHl-qy-BBk">
+            <size key="intrinsicContentSize" width="170" height="30"/>
+        </designable>
+        <designable name="IcG-D9-1cA">
+            <size key="intrinsicContentSize" width="170" height="30"/>
+        </designable>
+        <designable name="KFE-vT-IyI">
+            <size key="intrinsicContentSize" width="170" height="30"/>
+        </designable>
+        <designable name="QLq-lu-QwA">
+            <size key="intrinsicContentSize" width="170" height="30"/>
+        </designable>
+        <designable name="WTG-9b-4AI">
+            <size key="intrinsicContentSize" width="170" height="30"/>
+        </designable>
+        <designable name="Yyr-EL-tac">
+            <size key="intrinsicContentSize" width="170" height="30"/>
+        </designable>
+        <designable name="kvA-sM-OQ9">
+            <size key="intrinsicContentSize" width="170" height="30"/>
+        </designable>
+        <designable name="lWF-dz-prk">
+            <size key="intrinsicContentSize" width="170" height="30"/>
+        </designable>
+        <designable name="lcl-QN-UsA">
+            <size key="intrinsicContentSize" width="170" height="30"/>
+        </designable>
+        <designable name="mp7-AW-iRA">
+            <size key="intrinsicContentSize" width="170" height="30"/>
+        </designable>
+        <designable name="rSh-eT-xZf">
+            <size key="intrinsicContentSize" width="170" height="30"/>
+        </designable>
+        <designable name="v9t-r0-f0R">
+            <size key="intrinsicContentSize" width="170" height="30"/>
+        </designable>
+        <designable name="yNW-zD-uTf">
+            <size key="intrinsicContentSize" width="170" height="30"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="Background" width="414" height="896"/>
+        <image name="Email" width="285" height="69"/>
+        <image name="FB" width="285" height="69"/>
+        <image name="Google" width="285" height="69"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
