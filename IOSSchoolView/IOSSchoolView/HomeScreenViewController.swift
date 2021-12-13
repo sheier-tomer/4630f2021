@@ -13,6 +13,20 @@ class HomeScreenViewController: UIViewController {
     @IBAction func InfoViewButton(_ sender: Any) {
         performSegue(withIdentifier: "InfoSegue", sender: self)
     }
+    
+    
+    @IBAction func OtherViewButton(_ sender: Any) {
+        performSegue(withIdentifier: "OtherViewSegue", sender: self)
+    }
+    @IBAction func FacultyViewButton(_ sender: Any) {
+        performSegue(withIdentifier: "FacultyViewSegue", sender: self)
+    }
+    @IBAction func SocialViewButton(_ sender: Any) {
+        performSegue(withIdentifier: "SocialViewSegue", sender: self)
+    }
+    @IBAction func DiningViewButton(_ sender: Any) {
+        performSegue(withIdentifier: "DiningViewSegue", sender: self)
+    }
     @IBAction func HousingViewButton(_ sender: Any) {
         performSegue(withIdentifier: "HousingViewSegue", sender: self)
     }
